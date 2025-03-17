@@ -14,6 +14,8 @@
 		784E59802D877E4800E83D2E /* TrackizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E597F2D877E4800E83D2E /* TrackizerTests.swift */; };
 		784E598A2D877E4800E83D2E /* TrackizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E59892D877E4800E83D2E /* TrackizerUITests.swift */; };
 		784E598C2D877E4800E83D2E /* TrackizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E598B2D877E4800E83D2E /* TrackizerUITestsLaunchTests.swift */; };
+		784E59A32D87812200E83D2E /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E59A22D87812200E83D2E /* UIExtension.swift */; };
+		784E59A52D879C8400E83D2E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E59A42D879C8400E83D2E /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,13 @@
 		784E59852D877E4800E83D2E /* TrackizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		784E59892D877E4800E83D2E /* TrackizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackizerUITests.swift; sourceTree = "<group>"; };
 		784E598B2D877E4800E83D2E /* TrackizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		784E59A12D8780E100E83D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		784E59A22D87812200E83D2E /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		784E59A42D879C8400E83D2E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		78E0DB222D8833E900B4E235 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Regular.ttf"; path = "../../../../../Downloads/montly_expenses_trackizer_app_swiftui-main/Trackizer/Font/Inter-Regular.ttf"; sourceTree = "<group>"; };
+		78E0DB232D8833E900B4E235 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.ttf"; path = "../../../../../Downloads/montly_expenses_trackizer_app_swiftui-main/Trackizer/Font/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		78E0DB242D8833E900B4E235 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.ttf"; path = "../../../../../Downloads/montly_expenses_trackizer_app_swiftui-main/Trackizer/Font/Inter-Medium.ttf"; sourceTree = "<group>"; };
+		78E0DB252D8833E900B4E235 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Bold.ttf"; path = "../../../../../Downloads/montly_expenses_trackizer_app_swiftui-main/Trackizer/Font/Inter-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,13 @@
 		784E596D2D877E4600E83D2E /* Trackizer */ = {
 			isa = PBXGroup;
 			children = (
+				784E59A12D8780E100E83D2E /* Info.plist */,
+				784E599D2D87801500E83D2E /* UICommon */,
+				784E599C2D877FE900E83D2E /* Common */,
+				784E599B2D877FE100E83D2E /* Model */,
+				784E599A2D877F9A00E83D2E /* ViewModel */,
+				784E59992D877F8D00E83D2E /* View */,
+				784E59982D877EEC00E83D2E /* Font */,
 				784E596E2D877E4600E83D2E /* TrackizerApp.swift */,
 				784E59702D877E4600E83D2E /* ContentView.swift */,
 				784E59722D877E4800E83D2E /* Assets.xcassets */,
@@ -125,6 +141,78 @@
 				784E598B2D877E4800E83D2E /* TrackizerUITestsLaunchTests.swift */,
 			);
 			path = TrackizerUITests;
+			sourceTree = "<group>";
+		};
+		784E59982D877EEC00E83D2E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				78E0DB252D8833E900B4E235 /* Inter-Bold.ttf */,
+				78E0DB242D8833E900B4E235 /* Inter-Medium.ttf */,
+				78E0DB222D8833E900B4E235 /* Inter-Regular.ttf */,
+				78E0DB232D8833E900B4E235 /* Inter-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		784E59992D877F8D00E83D2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				784E59A02D87804C00E83D2E /* MainTab */,
+				784E599F2D87803F00E83D2E /* Home */,
+				784E599E2D87803400E83D2E /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		784E599A2D877F9A00E83D2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		784E599B2D877FE100E83D2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		784E599C2D877FE900E83D2E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		784E599D2D87801500E83D2E /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				784E59A22D87812200E83D2E /* UIExtension.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		784E599E2D87803400E83D2E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				784E59A42D879C8400E83D2E /* WelcomeView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		784E599F2D87803F00E83D2E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		784E59A02D87804C00E83D2E /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				784E59712D877E4600E83D2E /* ContentView.swift in Sources */,
+				784E59A32D87812200E83D2E /* UIExtension.swift in Sources */,
 				784E596F2D877E4600E83D2E /* TrackizerApp.swift in Sources */,
+				784E59A52D879C8400E83D2E /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +514,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Trackizer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trackizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +543,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Trackizer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Trackizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
